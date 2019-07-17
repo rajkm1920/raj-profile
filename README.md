@@ -1,2 +1,0 @@
-# raj-profile
-create portfolio
