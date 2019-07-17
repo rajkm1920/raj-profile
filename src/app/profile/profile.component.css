@@ -1,0 +1,11 @@
+.avatar {
+    vertical-align: middle;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+  }
+
+  .row:hover {
+      box-shadow: 0 0 6px rgba(33,33,33,.5); 
+    }
+  
