@@ -5,8 +5,13 @@
     border-radius: 50%;
   }
 
+  .row{
+    
+    padding: 10px;
+  }
   .row:hover {
       box-shadow: 0 0 6px rgba(33,33,33,.5); 
+      padding: 10px;
     }
 
     ol {
