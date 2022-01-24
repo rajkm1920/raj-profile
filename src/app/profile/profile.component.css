@@ -4,15 +4,26 @@
     height: 130px;
     border-radius: 50%;
   }
-
   .row{
-    
+
     padding: 10px;
   }
   .row:hover {
-      box-shadow: 0 0 6px rgba(31, 29, 29, 0.5); 
+      box-shadow: 0 0 6px rgba(31, 29, 29, 0.5);
       padding: 10px;
     }
 
-    
-  
+  .div-left{
+      float:left;
+      padding-left:10px;
+  }
+  .div-right{
+      float:right;
+      padding-right:10px;
+  }
+  .p-start{
+margin-left: 5%;
+padding: 0.1%;
+  }
+
+
