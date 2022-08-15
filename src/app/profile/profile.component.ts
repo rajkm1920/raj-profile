@@ -9,7 +9,7 @@ export class ProfileComponent implements OnInit {
   today: Date = new Date();
 
   //8= Sep start index 0=Jan
-  startDate: Date = new Date(2020, 8, 1);
+  startDate: Date = new Date(2022, 4, 1);
   start_mont: number = (this.startDate.getMonth() + 1);
   start_year: number = (this.startDate.getFullYear());
 
@@ -30,7 +30,12 @@ export class ProfileComponent implements OnInit {
       this.year = (this.current_year - this.start_year);
       if (this.start_mont == this.current_mont) {
         this.completedate = this.year + " year";
-      } else {
+      } else if(this.year<1) {
+       
+        this.completedate =  (this.current_mont - this.start_mont) + " month ";
+      }
+      else {
+       
         this.completedate = this.year + " year " + (this.current_mont - this.start_mont) + " month ";
       }
     }
