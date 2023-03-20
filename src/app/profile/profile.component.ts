@@ -22,6 +22,7 @@ export class ProfileComponent implements OnInit {
 
   constructor() { }
   ngOnInit() {
+    console.log('this.year++----',this.year)
     if (this.start_mont > this.current_mont) {
       this.year = (this.current_year - this.start_year - 1);
       this.month = (12 - this.start_mont) + this.current_mont;
@@ -31,11 +32,9 @@ export class ProfileComponent implements OnInit {
       if (this.start_mont == this.current_mont) {
         this.completedate = this.year + " year";
       } else if(this.year<1) {
-       
         this.completedate =  (this.current_mont - this.start_mont) + " month ";
       }
       else {
-       
         this.completedate = this.year + " year " + (this.current_mont - this.start_mont) + " month ";
       }
     }
